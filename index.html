@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+    
+        .container {
+            background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+            min-height: 100vh;
+            height: auto;
+            width: 100dvw;
+            padding-right: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+           }
+        .head{
+            text-align: center;
+        }
+     #heading{
+        display: inline-block;
+        background-color: yellow;
+        color: navy;
+        text-align: center;
+     }
+     #para{
+        width: 800px;
+        background-color: beige;
+        color: black;
+        text-align: center;
+        margin: auto;
+     }
+     .content_container{
+        margin: 30px;
+          display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 15px;
+            max-width: 1600px;
+             justify-content: center;
+            align-items: center;
+     }
+     .profile{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        
+     }
+     .item{
+        border: 2px solid black;
+        height: 530px;
+        width: 280px;
+        padding: 10px;
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        transition: all 1s linear 0s;
+     }
+     .item:hover{
+        transform: scale(1.05);
+     }
+     .item_content{
+        text-align: justify;
+     }
+     .img{
+         transition: all 1s linear 0s;
+     }
+     .img:hover{
+             transform: scale(1.05);
+     }
+      .content{
+         transition: all 1s linear 0s;
+     }
+     .content:hover{
+             transform: scale(1.05);
+     }
+      .profile{
+         transition: all 1s linear 0s;
+     }
+     .profile:hover{
+             transform: scale(1.05);
+     }
+     @media (max-width: 1200px) {
+    .content_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .head{
+        text-align: start;
+    }
+    #para{
+        padding-right:10px ;
+        width: auto;
+        margin-right: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 900px) {
+    .content_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .head{
+        text-align: start;
+    }
+    #para{
+        padding-right:10px ;
+        width: auto;
+        margin-right: 30px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:300px) and (max-width: 600px)  {
+    .content_container {
+        grid-template-columns: 1fr;
+
+    }
+     .head{
+        text-align: start;
+    }
+    #para{
+        padding-right:10px ;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: auto;
+        margin-right: 30px;
+        text-align: justify;
+    }
+    .container{
+        min-height: 100dvh;
+        max-height: auto;
+        background-attachment: fixed;
+          background-attachment: scroll;
+        width: 100vw;
+        padding-right: 15px;
+    }
+
+    .content_container{
+        margin-left: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <h1 id="heading"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuFgWjEpHw7Ax_U5QEtNvdrWVmOdo0lRjpQ&s" alt="head" height="50px" width="50px">Miles & Moments</h1>
+            <p id="para">Miles & Moments captures the stories behind every trip — the smiles, surprises, and sunsets that make traveling unforgettable. It’s not just about destinations, but the experiences that shape us along the way.</p>
+            <div class="content_container">
+                <div class="item item1">
+                <div class="img">
+                    <img id="item1_img" src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Magnum_w_373_h_248_c_fill_g_auto_q_auto:good_f_jpg/v1396178599/International%20Holidays/Maldives/Maldives/shutterstock_76399303.jpg" alt="img1" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item1_content1">Exploring [Maldives]</h1>
+                    <p class="item_content">Visiting the Maldives felt like stepping into a dream. The sound of the waves, the warm ocean breeze, and the endless shades of blue made every moment unforgettable. It’s a place where time slows down, and nature reminds you to simply breathe.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>JOHN</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                <div class="item item2">
+                <div class="img">
+                    <img id="item2_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jqrkwuNEq6TthtjA0pxAM8MXS5tkSPA5IA&s" alt="img2" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item2_content2">Exploring [KASHMIR]</h1>
+                    <p class="item_content">Kashmir, often called “Paradise on Earth,” is a land of snow-capped mountains, sparkling lakes, and lush valleys. From the calm waters of Dal Lake to the scenic beauty of Gulmarg and Pahalgam, every corner of Kashmir feels like a masterpiece painted by nature.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>RAM</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                 <div class="item item3">
+                <div class="img">
+                    <img id="item3_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLsYJ-zfaqJtkOnY8RRJ5_UVvNSYp6E6iUKA&s" alt="img3" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item3_content3">Exploring [LAOS]</h1>
+                    <p class="item_content">My trip to Laos felt like slowing down time. The soft rhythm of the Mekong River, the sound of monks chanting at sunrise, and the genuine smiles of the locals made it unforgettable. It’s a place that teaches you the art of peace and presence.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>RAHUL</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                <div class="item item4">
+                <div class="img">
+                    <img id="item4_img" src="https://blog.dookinternational.com/images/post-media/Vkh4B1721810153.jpg" alt="img4" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item4_content4">Exploring [THAILAND]</h1>
+                    <p class="item_content">Thailand captured my heart from the moment I arrived. The scent of street food, the golden glow of temples, and the friendly smiles made every moment special. It’s a place where adventure, spirituality, and beauty come together effortlessly.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>MANISH</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                <div class="item item5">
+                <div class="img">
+                    <img id="item5_img" src="https://blog.dookinternational.com/images/post-media/nQBAY1721810199.jpg" alt="img5" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item5_content5">Exploring [GEORGIA]</h1>
+                    <p class="item_content">Georgia is a land of breathtaking mountains, ancient monasteries, and warm hospitality. From the cobbled streets of Tbilisi to the snowy peaks of Kazbegi, every view feels like a postcard brought to life.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>RAFIN</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                <div class="item item6">
+                <div class="img">
+                    <img id="item6_img" src="https://blog.dookinternational.com/images/post-media/h7CBs1721810217.jpg" alt="img6" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item6_content6">Exploring [SRILANKA]</h1>
+                    <p class="item_content">Sri Lanka is an island of golden beaches, lush tea gardens, and ancient wonders. From the calm waves of Mirissa to the green hills of Nuwara Eliya, every part of this country feels peaceful and full of life.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>JAIDEEP</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                <div class="item item7">
+                <div class="img">
+                    <img id="item7_img" src="https://blog.dookinternational.com/images/post-media/xvqwg1721810230.jpg" alt="img7" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item7_content7">Exploring [DUBAI]</h1>
+                    <p class="item_content">Dubai is a city where modern skyscrapers meet golden deserts and blue seas. From the iconic Burj Khalifa to the calm dunes of the desert, it’s a place that perfectly blends luxury, adventure, and culture.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>JAIRAJ</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+                <div class="item item8">
+                <div class="img">
+                    <img id="item8_img" src="https://blog.dookinternational.com/images/post-media/JOZ7M1721810292.jpg" alt="img8" height="200px" width="280px">
+                </div>
+                    <div class="content">
+                        <h1 id="item8_content8">Exploring [MALAYSIA]</h1>
+                    <p class="item_content">Malaysia is a land of vibrant cities, tropical rainforests, and diverse traditions. From the shining towers of Kuala Lumpur to the serene islands of Langkawi, it offers the perfect blend of adventure and relaxation.</p>
+                </div>
+                <div class="profile">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?semt=ais_hybrid&w=740&q=80" alt="user" height="50px" width="30px">
+                    <p>RAMAN</p>
+                    <button>TRAVELLER</button>
+                </div>
+                </div>
+               
+            </div>
+        </header>
+    </div>
+</body>
